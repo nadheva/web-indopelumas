@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Produk;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
 class ProdukController extends Controller
 {
     public function index()
@@ -24,11 +24,12 @@ class ProdukController extends Controller
             'foto' => 'required|mimes:jpeg,png,jpg',
             'deskripsi' => 'required'
         ]);
+        
         if (isset($request->foto)) {
-            $extention = $request->foto->extension();
-            $file_name = time() . '.' . $extention;
-            $txt = "storage/images/" . $file_name;
-            $request->foto->storeAs('public/images', $file_name);
+            $date = date("his");
+            $extension = $request->file('foto')->extension();
+            $file_name = "foto_$date.$extension";
+            $path = $request->file('foto')->storeAs('public/produk', $file_name);
         } else {
             $txt = null;
         }
@@ -55,14 +56,18 @@ class ProdukController extends Controller
         $produk->produk = $request->produk;
         $produk->deskripsi = $request->deskripsi;
 
-        if (isset($request->foto)) {
-            $extention = $request->foto->extension();
-            $file_name = time() . '.' . $extention;
-            $txt = 'storage/images/' . $file_name;
-            $request->foto->storeAs('public/images', $file_name);
-            $produk->foto = $txt;
-        } else {
+        if ($request->has("foto")) {
+
+            Storage::delete("public/produk/$produk->foto");
+
+            $date = date("his");
+            $extension = $request->file('foto')->extension();
+            $file_name = "foto_$date.$extension";
+            $path = $request->file('foto')->storeAs('public/produk', $file_name);
+            
+            $produk->foto = $file_name;
         }
+       
 
         $produk->save();
 
