@@ -26,6 +26,7 @@
                 <div class="container-fluid">
 
                   {{$slot}}
+                  @yield('content')
 
                 </div>
                 <!-- /.container-fluid -->
