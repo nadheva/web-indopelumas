@@ -21,7 +21,7 @@ class NewsController extends Controller
     {
         $request->validate([
             'tgl_post' => 'required',
-            'bln_post' => 'required',
+            // 'bln_post' => 'required',
             'kategori' => 'required',
             'judul'  => 'required',
             'short_news'   => 'required',
@@ -30,7 +30,7 @@ class NewsController extends Controller
 
         News::create([
             'tgl_post' => $request->tgl_post,
-            'bln_post' => $request->bln_post,
+            // 'bln_post' => $request->bln_post,
             'kategori' => $request->kategori,
             'judul'     => $request->judul,
             'short_news'=> $request->short_news,
@@ -51,7 +51,7 @@ class NewsController extends Controller
     {
         $news = News::findOrFail($id);
         $news->tgl_post = $request->tgl_post;
-        $news->bln_post = $request->bln_post;
+        // $news->bln_post = $request->bln_post;
         $news->kategori = $request->kategori;
         $news->judul = $request->judul;
         $news->short_news = $request->short_news;

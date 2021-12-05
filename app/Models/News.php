@@ -11,7 +11,6 @@ class News extends Model
     protected $table = 'news';
     protected $fillable = [
         'tgl_post',
-        'bln_post',
         'kategori',
         'judul',
         'short_news',

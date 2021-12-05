@@ -26,6 +26,7 @@ Route::get('/admin', function () {
 Route::resource('produk', ProdukController::class);
 Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
 Route::resource('news', NewsController::class);
+Route::get('news/delete/{id}', [NewsController::class, 'delete']);
 Route::resource('komentar', KomentarController::class);
 
 Route::get('/dashboard', function () {
