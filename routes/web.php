@@ -29,6 +29,10 @@ Route::get('/contact-us', function () {
     return view('users.contact-us');
 });
 
+Route::get('/nebula', function () {
+    return view('users.single-page');
+});
+
 Route::get('/admin', function () {
     return view('admin.index');
 });
