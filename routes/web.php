@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.guest');
+    return view('users.index');
 });
 
 Route::get('/admin', function () {
-    return view('users.index');
+    return view('admin.index');
 });
 
 Route::get('/dashboard', function () {
