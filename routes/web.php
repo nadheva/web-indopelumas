@@ -20,6 +20,18 @@ Route::get('/', function () {
     return view('users.index');
 });
 
+Route::get('/about-us', function () {
+    return view('users.about-us');
+});
+
+Route::get('/products', function () {
+    return view('users.products');
+});
+
+Route::get('/contact-us', function () {
+    return view('users.contact-us');
+});
+
 Route::get('/admin', function () {
     return view('admin.index');
 });
@@ -28,6 +40,7 @@ Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
 Route::resource('news', NewsController::class);
 Route::get('news/delete/{id}', [NewsController::class, 'delete']);
 Route::resource('komentar', KomentarController::class);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
