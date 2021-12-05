@@ -18,11 +18,15 @@ use App\Http\Controllers\KomentarController;
 
 Route::get('/', function () {
     return view('users.index');
+})->name('landingpage');
+
+Route::get('/artikel', function () {
+    return view('users.news');
 });
 
 Route::get('/about-us', function () {
     return view('users.about-us');
-});
+})->name('aboutus');
 
 Route::get('/products', function () {
     return view('users.products');
@@ -30,7 +34,7 @@ Route::get('/products', function () {
 
 Route::get('/contact-us', function () {
     return view('users.contact-us');
-});
+})->name('contactus');
 
 Route::get('/admin', function () {
     return view('admin.index');

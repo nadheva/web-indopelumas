@@ -7,8 +7,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('landingpage') ? 'active' : '' }}" href="{{route('landingpage')}}">Home</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('aboutus') ? 'active' : '' }}" href="{{route('aboutus')}}">About</a></li>
           <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -26,9 +26,9 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto " href="#portfolio">Customer Testimonials</a></li>
-          <li><a class="nav-link scrollto" href="#services">News & Articles</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('testimonial') ? 'active' : '' }}" href="#portfolio">Customer Testimonials</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('artikel') ? 'active' : '' }}" href="#services">News & Articles</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('contactus') ? 'active' : '' }}" href="{{route('contactus')}}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
