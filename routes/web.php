@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\KomentarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +23,10 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin.index');
 });
+Route::resource('produk', ProdukController::class);
+Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
+Route::resource('news', NewsController::class);
+Route::resource('komentar', KomentarController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
