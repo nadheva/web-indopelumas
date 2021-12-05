@@ -1,222 +1,42 @@
 <x-guest-layout>
-    <section id="blog" class="blog">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="row">
-  
-            <div class="col-lg-8 entries">
-  
-              <article class="entry">
-  
-                <div class="entry-img">
-                  <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                </div>
-  
-                <h2 class="entry-title">
-                  <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
-                </h2>
-  
-                <div class="entry-meta">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                  </ul>
-                </div>
-  
-                <div class="entry-content">
-                  <p>
-                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-                  </p>
-                  <div class="read-more">
-                    <a href="blog-single.html">Read More</a>
-                  </div>
-                </div>
-  
-              </article><!-- End blog entry -->
-  
-              <article class="entry">
-  
-                <div class="entry-img">
-                  <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                </div>
-  
-                <h2 class="entry-title">
-                  <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                </h2>
-  
-                <div class="entry-meta">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                  </ul>
-                </div>
-  
-                <div class="entry-content">
-                  <p>
-                    Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
-                    Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
-                  </p>
-                  <div class="read-more">
-                    <a href="blog-single.html">Read More</a>
-                  </div>
-                </div>
-  
-              </article><!-- End blog entry -->
-  
-              <article class="entry">
-  
-                <div class="entry-img">
-                  <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                </div>
-  
-                <h2 class="entry-title">
-                  <a href="blog-single.html">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
-                </h2>
-  
-                <div class="entry-meta">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                  </ul>
-                </div>
-  
-                <div class="entry-content">
-                  <p>
-                    Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
-                    Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
-                  </p>
-                  <div class="read-more">
-                    <a href="blog-single.html">Read More</a>
-                  </div>
-                </div>
-  
-              </article><!-- End blog entry -->
-  
-              <article class="entry">
-  
-                <div class="entry-img">
-                  <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
-                </div>
-  
-                <h2 class="entry-title">
-                  <a href="blog-single.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
-                </h2>
-  
-                <div class="entry-meta">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-                  </ul>
-                </div>
-  
-                <div class="entry-content">
-                  <p>
-                    Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
-                    Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
-                  </p>
-                  <div class="read-more">
-                    <a href="blog-single.html">Read More</a>
-                  </div>
-                </div>
-  
-              </article><!-- End blog entry -->
-  
-              <div class="blog-pagination">
-                <ul class="justify-content-center">
-                  <li><a href="#">1</a></li>
-                  <li class="active"><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                </ul>
-              </div>
-  
-            </div><!-- End blog entries list -->
-  
-            <div class="col-lg-4">
-  
-              <div class="sidebar">
-  
-                <h3 class="sidebar-title">Search</h3>
-                <div class="sidebar-item search-form">
-                  <form action="">
-                    <input type="text">
-                    <button type="submit"><i class="bi bi-search"></i></button>
-                  </form>
-                </div><!-- End sidebar search formn-->
-  
-                <h3 class="sidebar-title">Categories</h3>
-                <div class="sidebar-item categories">
-                  <ul>
-                    <li><a href="#">General <span>(25)</span></a></li>
-                    <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                    <li><a href="#">Travel <span>(5)</span></a></li>
-                    <li><a href="#">Design <span>(22)</span></a></li>
-                    <li><a href="#">Creative <span>(8)</span></a></li>
-                    <li><a href="#">Educaion <span>(14)</span></a></li>
-                  </ul>
-                </div><!-- End sidebar categories-->
-  
-                <h3 class="sidebar-title">Recent Posts</h3>
-                <div class="sidebar-item recent-posts">
-                  <div class="post-item clearfix">
-                    <img src="assets/img/blog/blog-recent-1.jpg" alt="">
-                    <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
-                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                  </div>
-  
-                  <div class="post-item clearfix">
-                    <img src="assets/img/blog/blog-recent-2.jpg" alt="">
-                    <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
-                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                  </div>
-  
-                  <div class="post-item clearfix">
-                    <img src="assets/img/blog/blog-recent-3.jpg" alt="">
-                    <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                  </div>
-  
-                  <div class="post-item clearfix">
-                    <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                    <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
-                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                  </div>
-  
-                  <div class="post-item clearfix">
-                    <img src="assets/img/blog/blog-recent-5.jpg" alt="">
-                    <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                    <time datetime="2020-01-01">Jan 1, 2020</time>
-                  </div>
-  
-                </div><!-- End sidebar recent posts-->
-  
-                <h3 class="sidebar-title">Tags</h3>
-                <div class="sidebar-item tags">
-                  <ul>
-                    <li><a href="#">App</a></li>
-                    <li><a href="#">IT</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Office</a></li>
-                    <li><a href="#">Creative</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Smart</a></li>
-                    <li><a href="#">Tips</a></li>
-                    <li><a href="#">Marketing</a></li>
-                  </ul>
-                </div><!-- End sidebar tags-->
-  
-              </div><!-- End sidebar -->
-  
-            </div><!-- End blog sidebar -->
-  
+   <!-- ======= Contact Section ======= -->
+   <section id="contact" class="portfolio-details mt-5" >
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Berita dan Artikel</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-9">
+          @foreach ($semuaberita as $item)
+          <div class="card mb-3">
+            <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22697%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20697%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17d8b54401a%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A35pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17d8b54401a%22%3E%3Crect%20width%3D%22697%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22258.9751281738281%22%20y%3D%22105.54557991027832%22%3E697x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{$item->judul}}</h4>
+              <p class="card-text">{{$item->isi}}</p>
+              <p class="card-text"><small class="text-muted">{{$item->penulis}} - {{$item->created_at}}</small></p>
+            </div>
           </div>
-  
+          @endforeach
         </div>
-      </section><!-- End Blog Section -->
+
+        <div class="col-lg-3">
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Web design</li>
+              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
 </x-guest-layout>

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\KomentarController;
-
+use App\Http\Controllers\LandingPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +23,7 @@ Route::get('/', function () {
 Route::get('/artikel', function () {
     return view('users.news');
 });
+Route::get('artikel', [LandingPageController::class, 'artikel'])->name('artikel');
 
 Route::get('/about-us', function () {
     return view('users.about-us');

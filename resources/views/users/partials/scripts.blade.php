@@ -12,3 +12,4 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('tlandingpage/assets/js/main.js')}}"></script>
+@stack('scripts')

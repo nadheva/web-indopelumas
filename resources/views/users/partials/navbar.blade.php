@@ -29,7 +29,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto {{ Request::routeIs('testimonial') ? 'active' : '' }}" href="#portfolio">Customer Testimonials</a></li>
-          <li><a class="nav-link scrollto {{ Request::routeIs('artikel') ? 'active' : '' }}" href="#services">News & Articles</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('artikel') ? 'active' : '' }}" href="{{route('artikel')}}">News & Articles</a></li>
           <li><a class="nav-link scrollto {{ Request::routeIs('contactus') ? 'active' : '' }}" href="{{route('contactus')}}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

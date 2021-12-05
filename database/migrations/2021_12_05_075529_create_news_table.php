@@ -13,14 +13,13 @@ class CreateNewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('berita', function (Blueprint $table) {
             $table->id();
-            $table->string('tgl_post');
-            // $table->string('bln_post');
             $table->string('kategori');
             $table->string('judul');
-            $table->text('short_news');
-            $table->text('news');
+            $table->text('isi');
+            $table->string('penulis');
+            $table->string('foto');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateNewsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('news');
+        Schema::dropIfExists('berita');
     }
 }
