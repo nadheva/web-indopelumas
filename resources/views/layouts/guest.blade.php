@@ -42,13 +42,23 @@
 
   <!-- container -->
     <div class="container-fluid py-4">      
-      
+    <main id="main">
        <!-- isi konten -->
         {{-- {{$slot}}
         @yield('content') --}}
 
        <!-- end isi konten -->
-
+        @include('partials.about')
+        @include('partials.counts')
+        @include('partials.whyus')
+        @include('partials.services')
+        @include('partials.testimonials')
+        @include('partials.cta')
+        @include('partials.portofolio')
+        @include('partials.team')
+        @include('partials.pricing')
+        @include('partials.faq')
+        @include('partials.contact')
       <!-- footer -->
         @include('partials.footer')
       <!-- end isi footer -->
@@ -58,6 +68,8 @@
 
 
   </main>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div class="fixed-plugin">
     @include('partials.plugin')
