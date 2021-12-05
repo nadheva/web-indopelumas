@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('users.index');
 });
 
+Route::get('/admin', function () {
+    return view('users.index');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
