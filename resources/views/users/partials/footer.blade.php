@@ -6,7 +6,7 @@
         
 
           <div class="col-lg-4 col-md-6 footer-links">
-            {{-- LOGO --}}
+            <img src="{{asset('tlandingpage/assets/img/indopelumaspth.png')}}" width="300" >
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
