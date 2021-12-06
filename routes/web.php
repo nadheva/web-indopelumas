@@ -50,6 +50,9 @@ Route::resource('isiproduk', IsiProdukController::class);
 
 // Isi Produk 
 Route::get('tambah-isi-produk/{id}', [IsiProdukController::class, 'create'])->name('tambahisiproduk');
+Route::get('edit-isi-produk/{id}', [IsiProdukController::class, 'edit']);
+Route::put('update-isi-produk/{id}', [IsiProdukController::class, 'update'])->name('updateisiproduk');
+Route::get('delete-isi-produk/{id}', [IsiProdukController::class, 'delete'])->name('deleteisiproduk');
 
 Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
 

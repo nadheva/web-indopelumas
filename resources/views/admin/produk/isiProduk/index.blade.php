@@ -36,9 +36,8 @@
                                                     <i class="fas fa-ellipsis-v"></i>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                    <a class="dropdown-item" href="">Edit</a>
-                                                    
-                                                    <a class="dropdown-item" onclick="return confirm('Anda yakin menghapus ')" href="produk/delete/{{$row -> id}}">Delete</a>
+                                                    <a class="dropdown-item" href="/edit-isi-produk/{{$row->produk_slug}}">Edit</a>
+                                                    <a class="dropdown-item" onclick="return confirm('Anda yakin menghapus ')" href="/edit-isi-delete/{{$row->produk_slug}}">Delete</a>
                                                 </div>
                                             </div>
                                         </td>
