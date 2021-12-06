@@ -13,23 +13,23 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="tgl_post">Tanggal</label>
-                    <input type="date" class="form-control @error('tgl_post') is-invalid @enderror" id="tgl_post"  name="tgl_post" value="{{old('tgl_post')}}">
-                    @error('tgl_post')
+                    <label for="penulis">Penulis</label>
+                    <input type="text" class="form-control @error('penulis') is-invalid @enderror" id="penulis"  name="penulis" value="{{old('penulis')}}">
+                    @error('penulis')
                     <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="short_news">Short News</label>
-                    <textarea class="form-control @error('short_news') is-invalid @enderror" rows="3" id="short_news" name="short_news" value="{{old('short_news')}}"></textarea>
-                    @error('short_news')
+                    <label for="foto">Foto</label>
+                    <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" name="foto" value="{{old('foto')}}"></input>
+                    @error('foto')
                     <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="news">News</label>
-                    <textarea class="form-control @error('news') is-invalid @enderror" rows="4" id="news" name="news" value="{{old('news')}}"></textarea>
-                    @error('news')
+                    <label for="isi">Isi</label>
+                    <textarea class="form-control @error('isi') is-invalid @enderror" rows="4" id="isi" name="isi" value="{{old('isi')}}"></textarea>
+                    @error('isi')
                     <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                 </div>
@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <label for="kategori"></label> <br>
                     <select class="form-control" name="kategori" id="kategori" aria-label="Default select example" value="{{old('kategori')}}">
-                        <option value="Proses TTD Pimpinan">Sample 1</option>
+                        <option value="Sample 1">Sample 1</option>
                     </select>
                 </div>
 

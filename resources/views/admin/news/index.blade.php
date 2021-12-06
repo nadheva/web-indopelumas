@@ -19,9 +19,10 @@
                                         <tr>
                                         <th width="5%">No.</th>
                                         <th>Judul</th>
-                                        <th>Tanggal Post</th>
+                                        <th>Penulis</th>
                                         <th>Kategori</th>
-                                        <th>Short News</th>
+                                        <th>Isi</th>
+                                        <th>Foto</th>
                                         <th>Action</th>
                                         </tr>
                                     </thead class="list">
@@ -31,9 +32,10 @@
                                         <tr  class="text-dark">
                                                 <td width="5%">{{$loop->iteration}}</td>
                                                 <td>{{$row->judul}}</td>
-                                                <td>{{$row->tgl_post}}</td>
+                                                <td>{{$row->penulis}}</td>
                                                 <td>{{$row->kategori}}</td>
-                                                <td>{{$row->short_news}}</td>
+                                                <td>{{$row->isi}}</td>
+                                                <td>{{$row->foto}}</td>
                                         <td class="text-right">
                                             <div class="dropdown">
                                                 <a class="btn btn-sm btn-icon-only text" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

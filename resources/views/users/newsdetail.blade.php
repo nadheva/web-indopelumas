@@ -35,7 +35,7 @@ body, #team{
                 <div class="col-lg-12 text-center">
                     <div class="" data-aos="fade-right">
                         <h2>{{$berita->judul}}</h2>
-                        <p>Admin|{{$berita->created_at->isoFormat("DD MMMM, Y")}}</p>
+                        {{-- <p>Admin|{{$berita->created_at->isoFormat("DD MMMM, Y")}}</p> --}}
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ body, #team{
                                     <div class="row m-2">
                                         <div class="col-9">
                                             <h5><a href="{{route('berita.show', $item->id)}}">{{ $item->judul}}</a></h5>
-                                            <small><span>Post : </span>{{$item->created_at->isoFormat("DD MMMM, Y")}}</small>
+                                            {{-- <small><span>Post : </span>{{$item->created_at->isoFormat("DD MMMM, Y")}}</small> --}}
                                         </div>
                                         <div class="col-3 berita-foto"  style="background-image: url({{url("storage/berita/$item->foto")}})">
                                             
@@ -59,7 +59,7 @@ body, #team{
                             @endforeach    
                             <div class="col-lg-12 d-flex justify-content-center mt-5 bg-white rounded-lg">
                                 <div class="row align-item-center ">
-                                    {{$semuaberita->links()}}
+                                    {{-- {{$semuaberita->links()}} --}}
                                 </div>
                             </div>                
                         </div>
