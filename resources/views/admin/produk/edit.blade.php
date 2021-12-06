@@ -3,11 +3,10 @@
         <div class="row">
             <div class="col-sm-10 offset-sm-1">
                 <h2 class="text-center pt-4">Edit Produk</h2>
-                @foreach($produk as $row)
-                <form class="form-horizontal" method="post" action="{{route('produk.update')}}" enctype="multipart/form-data">
+                <form class="form-horizontal" method="post" action="{{route('produk.update', $produk->id)}}" enctype="multipart/form-data">
                     @csrf
                     @method('put')
-                    <input type="hidden" name="id" value="{{ $row->id }}">
+                    {{-- <input type="hidden" name="id" value="{{ $row->id }}"> --}}
                     <div class="form-group">
                         <label for="produk">Produk</label>
                         <input type="text" class="form-control @error('produk') is-invalid @enderror" id="produk"  name="produk" value="{{$produk->produk}}">
@@ -32,7 +31,6 @@
     
                     <button type="submit" class="btn btn-primary">Update Data</button>
                 </form>
-                @endforeach
             </div>
         </div>
     </div>

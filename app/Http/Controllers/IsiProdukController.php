@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Str;
 use App\Models\IsiProduk;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,8 @@ class IsiIsiProdukController extends Controller
         IsiProduk::create([
             'judul' => $request->judul,
             'produk_slug' => $request->produk_slug,
-            'isi' => $request->isi
+            'isi' => $request->isi,
+            'produk_slug'      => Str::slug($request->judul)
         ]);
 
         return redirect()->route('IsiProduk.index')
@@ -53,6 +55,7 @@ class IsiIsiProdukController extends Controller
         $IsiProduk->judul = $request->judul;
         $IsiProduk->produk_slug = $request->produk_slug;      
         $IsiProduk->isi = $request->isi;  
+        $IsiProduk->produk_slug = Str::slug($request->judul);
         $IsiProduk->save();
 
         return redirect()->route('IsiProduk.index')

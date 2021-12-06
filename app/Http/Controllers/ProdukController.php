@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Str;
 use App\Models\Produk;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -22,7 +23,7 @@ class ProdukController extends Controller
         $request->validate([
             'produk' => 'required',
             'foto' => 'required|mimes:jpeg,png,jpg',
-            'deskripsi' => 'required'
+            'deskripsi' => 'required',
         ]);
         
         if (isset($request->foto)) {
@@ -37,7 +38,8 @@ class ProdukController extends Controller
         Produk::create([
             'produk' => $request->produk,
             'foto' => $file_name,
-            'deskripsi' => $request->deskripsi
+            'deskripsi' => $request->deskripsi,
+            'slug'      => Str::slug($request->produk)
         ]);
 
         return redirect()->route('produk.index')
@@ -46,7 +48,7 @@ class ProdukController extends Controller
 
     public function edit($id)
     {
-        $produk = Produk::find($id);
+        $produk = Produk::where('id', $id)->first();
         return view('admin.produk.edit', compact('produk'));
     }
 
@@ -61,6 +63,7 @@ class ProdukController extends Controller
         $produk = Produk::findOrFail($id);
         $produk->produk = $request->produk;
         $produk->deskripsi = $request->deskripsi;
+        $produk->slug = Str::slug($request->produk);
 
         if ($request->has("foto")) {
 

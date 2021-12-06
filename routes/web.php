@@ -47,6 +47,7 @@ Route::get('/admin', function () {
 Route::resource('produk', ProdukController::class);
 Route::get('product-details/{id}', [ProdukController::class, 'productDetails']);
 Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
+// Route::put('produk/update/{id}', [ProdukController::class, 'update']);
 Route::resource('news', NewsController::class);
 Route::get('news/delete/{id}', [NewsController::class, 'delete']);
 Route::get('news/show/{id}', [NewsController::class, 'show']);
