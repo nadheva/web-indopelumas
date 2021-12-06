@@ -50,6 +50,12 @@ class ProdukController extends Controller
         return view('admin.produk.edit', compact('produk'));
     }
 
+    public function show($id)
+    {
+        $produk = Produk::find($id);
+        return view('admin.produk.show', compact('produk'));
+    }
+
     public function update(Request $request,$id)
     {
         $produk = Produk::findOrFail($id);

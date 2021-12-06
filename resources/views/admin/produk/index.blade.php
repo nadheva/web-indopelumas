@@ -39,6 +39,7 @@
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                     <a class="dropdown-item" href="{{route('produk.edit', $row->id)}}">Edit</a>
+                                                    <a class="dropdown-item" href="{{route('produk.show', $row->id)}}">Show</a>
                                                     <a class="dropdown-item" onclick="return confirm('Anda yakin menghapus ')" href="produk/delete/{{$row -> id}}">Delete</a>
                                                 </div>
                                             </div>
