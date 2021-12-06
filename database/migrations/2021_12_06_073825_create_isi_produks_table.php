@@ -16,8 +16,8 @@ class CreateIsiProduksTable extends Migration
         Schema::create('isi_produk', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->string('isi');
-            $table->text('produk_slug');
+            $table->text('isi');
+            $table->string('produk_slug');
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\IsiProdukController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\LandingPageController;
@@ -45,9 +46,15 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 Route::resource('produk', ProdukController::class);
-Route::get('product-details/{id}', [ProdukController::class, 'productDetails']);
+Route::resource('isiproduk', IsiProdukController::class);
+
+// Isi Produk 
+Route::get('tambah-isi-produk/{id}', [IsiProdukController::class, 'create'])->name('tambahisiproduk');
+
 Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
-// Route::put('produk/update/{id}', [ProdukController::class, 'update']);
+
+Route::get('product-details/{id}', [IsiProdukController::class, 'productDetails'])->name('showdata');
+
 Route::resource('news', NewsController::class);
 Route::get('news/delete/{id}', [NewsController::class, 'delete']);
 Route::get('news/show/{id}', [NewsController::class, 'show']);

@@ -21,14 +21,14 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> --}}
-              <li><a href="#">Pertaminal Oil</a></li>
+              <li><a href="#">Pertamina Oil</a></li>
               <li><a href="#">Shell Oil</a></li>
               <li><a href="#">Mobil Oil</a></li>
               <li><a href="#">Eni Oil</a></li>
               <li><a href="#">Total Oil</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto {{ Request::routeIs('testimonial') ? 'active' : '' }}" href="#portfolio">Customer Testimonials</a></li>
+          <li><a class="nav-link scrollto {{ Request::routeIs('testimonial') ? 'active' : '' }}" href="{{URL('about-us#testimonials')}}">Customer Testimonials</a></li>
           <li><a class="nav-link scrollto {{ Request::routeIs('artikel') ? 'active' : '' }}" href="{{route('artikel')}}">News & Articles</a></li>
           <li><a class="nav-link scrollto {{ Request::routeIs('contactus') ? 'active' : '' }}" href="{{route('contactus')}}">Contact</a></li>
         </ul>
