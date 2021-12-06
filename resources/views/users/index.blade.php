@@ -10,9 +10,8 @@
       <div class="carousel-item active" style="background-image: url({{('tlandingpage/assets/img/slide/slide1.jpg')}})">
         <div class="carousel-container">
           <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Multi</span></h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            <h2 class="animate__animated animate__fadeInDown">Indo<span>pelumas</span></h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Our Products</a>
           </div>
         </div>
       </div>
@@ -20,55 +19,30 @@
       <!-- Slide 2 -->
       <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/slide2.jpg')}})">
         <div class="carousel-container">
-          <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-          </div>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/slide3.jpg')}})">
         <div class="carousel-container">
-          <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-          </div>
         </div>
       </div>
 
       <!-- Slide 4 -->
       <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b1.jpg')}})">
         <div class="carousel-container">
-          <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-          </div>
         </div>
       </div>
 
       <!-- Slide 5 -->
       <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b2.jpg')}})">
         <div class="carousel-container">
-          <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-          </div>
         </div>
       </div>
 
       <!-- Slide 6 -->
-      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b3.png')}})">
+      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b3.jpg')}})">
         <div class="carousel-container">
-          <div class="container">
-            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-          </div>
         </div>
       </div>
 

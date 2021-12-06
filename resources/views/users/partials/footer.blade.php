@@ -12,11 +12,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Altenative Link</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Testimonials</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">News & Articles</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('landingpage')}}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('aboutus')}}">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{URL('about-us#testimonials')}}">Testimonials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('artikel')}}">News & Articles</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('contactus')}}">Contact</a></li>
             </ul>
           </div>
 
