@@ -641,6 +641,9 @@ section {
   background-position: center center;
   min-height: 400px;
   position: relative;
+  height: 200px;
+  top: auto;
+  margin-left: auto;
 }
 .why-us .accordion-list {
   padding: 0 100px 60px 100px;
