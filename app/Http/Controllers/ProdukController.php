@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\IsiProduk;
 use Illuminate\Support\Str;
 use App\Models\Produk;
 use Illuminate\Http\Request;
@@ -90,10 +92,5 @@ class ProdukController extends Controller
         ->with('delete', 'Produk berhasil dihapus');
     }
 
-    public function productDetails($id)
-    {
-        $produk = Produk::find($id);
-        return view('users.test', compact('produk'));
-    }
 
 }
