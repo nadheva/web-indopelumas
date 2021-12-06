@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Str;
 use App\Models\IsiProduk;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class IsiIsiProdukController extends Controller
 {
-    public function index()
+    public function index($id)
     {
         $IsiProduk = IsiProduk::all();
-        return view('admin.IsiProduk.index', compact('IsiProduk'));
+        $produk = Produk::where('id', $id)->get();
+        return view('admin.IsiProduk.index', compact('IsiProduk', 'produk'));
     }
 
     public function create()
