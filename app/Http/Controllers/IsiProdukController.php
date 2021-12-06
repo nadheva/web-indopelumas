@@ -20,14 +20,15 @@ class IsiIsiProdukController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'IsiProduk' => 'required',
-            'foto' => 'required|mimes:jpeg,png,jpg',
-            'deskripsi' => 'required'
+            'judul' => 'required',
+            'isi' => 'required',
+            'produk_slug' => 'required'
         ]);
         
         IsiProduk::create([
-            'IsiProduk' => $request->IsiProduk,
-            'deskripsi' => $request->deskripsi
+            'judul' => $request->judul,
+            'produk_slug' => $request->produk_slug,
+            'isi' => $request->isi
         ]);
 
         return redirect()->route('IsiProduk.index')
@@ -49,9 +50,9 @@ class IsiIsiProdukController extends Controller
     public function update(Request $request,$id)
     {
         $IsiProduk = IsiProduk::findOrFail($id);
-        $IsiProduk->IsiProduk = $request->IsiProduk;
-        $IsiProduk->deskripsi = $request->deskripsi;      
-
+        $IsiProduk->judul = $request->judul;
+        $IsiProduk->produk_slug = $request->produk_slug;      
+        $IsiProduk->isi = $request->isi;  
         $IsiProduk->save();
 
         return redirect()->route('IsiProduk.index')

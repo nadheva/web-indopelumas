@@ -13,8 +13,11 @@ class CreateIsiProduksTable extends Migration
      */
     public function up()
     {
-        Schema::create('isi_produks', function (Blueprint $table) {
+        Schema::create('isi_produk', function (Blueprint $table) {
             $table->id();
+            $table->string('judul');
+            $table->string('isi');
+            $table->text('produk_slug');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateIsiProduksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('isi_produks');
+        Schema::dropIfExists('isi_produk');
     }
 }
