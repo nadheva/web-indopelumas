@@ -18,7 +18,7 @@ class CreateProdukTable extends Migration
             $table->string('produk');
             $table->string('foto');
             $table->text('deskripsi');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->timestamps();
         });
     }
