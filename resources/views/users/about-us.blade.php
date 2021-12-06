@@ -1,30 +1,17 @@
 <x-guest-layout>
 
-  <!-- ======= Cta Section ======= -->
-  <section id="cta" class="cta mt-4">
-    <div class="container" data-aos="zoom-in">
-
-      <div class="text-center">
-        <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
-      </div>
-
-    </div>
-  </section><!-- End Cta Section -->
-
   <!-- ======= About Section ======= -->
- <section id="about" class="about mt-4">
+ <section id="about" class="about mt-5 pt-5">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2></h2>
+        <h2>About us</h2>
         <p>Indopelumas</p>
       </div>
 
       <div class="row content">
         <div class="col-lg-12 pt-4 pt-lg-0">
-          <p>
+          <p align="justify">
             Indopelumas adalah pemegang merk atau principal dari Nebula Lubricant yakni produk pelumas atau disebut juga oli, yang bisa diandalkan. Saat ini lini produk yang dipasarkan terbagi menjadi dua bagian penting yaitu oli dan grease yang lazim disebut sebagai minyak gemuk atau stempet
             <br> <br>
             Dari pengalaman marketing selama belasan tahun dalam dunia pelumasan, kami telah berhasil melayani jutaan liter permintaan pelumas untuk berbagai bidang industri di Indonesia. Berbekal etos kerja dan profesionalisme. Selalu mengupayakan yang terbaik untuk setiap pelanggan. Kami yakin dapat membangun kebersamaan bisnis jangka panjang dengan perusahaan Anda.
@@ -58,7 +45,7 @@
                 <img src="{{asset('storage/testimonial/'.$item->foto)}}" class="testimonial-img" alt="">
                 <h3>{{$item->nama}}</h3>
                 <h4>{{$item->perusahaan}}</h4>
-                <p>
+                <p align="justify">
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   {{$item->isi}}
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>

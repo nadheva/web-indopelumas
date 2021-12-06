@@ -124,26 +124,27 @@
               Selalu ingin berkembang dan bergerak maju bersama pelanggan
             </p>
             <br>
+            <p align="justify">
             <b>PT. MITRA ETHANINDO</b>  adalah pemegang merk/Principal dari NEBULA LUBRICANTS yang merupakan produk pelumas yang bisa diandalkan. Selain itu perusahaan kami juga berkerjasama dengan beberapa Distributor pelumas di tanah air seperti merk Pertamina, Shell, Exxon Mobil, Eni (Agip) dll untuk mencukupi kebutuhan customer yang datang dari berbagai sektor industri.
-            <br>
+            <br><br>
             Sekarang ini lini produk kami terbagi menjadi dua bagian penting yaitu Oli dan Grease/Minyak Gemuk/Stempet.
-            
+            </p>
           </ul>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
-          <p>
+          <p align="justify">
             Dari pengalaman marketing selama belasan tahun dalam dunia pelumasan, kami telah berhasil melayani jutaan liter permintaan pelumas dari berbagai bidang industri di Indonesia.
             Semenjak perusahaan ini berdiri dari tahun 2012 tentunya telah banyak sekali pengalaman kami dalam melayani Customer. Berbekal profesionalisme dan mengupayakan yang terbaik untuk Customer, kami yakin dapat membangun kebersamaan bisnis jangka panjang dengan perusahaan Anda.
-            <br>
+            <br><br>
             Sekarang ini kami telah banyak sekali berkerjasama dengan perusahaan yang bergerak di bidang Transportasi, Proyek industry/Infrastruktur, Mining Coal/Nickel, Power Plant, Perkebunan, Marine, Oil & Gas Service dll.
             Dengan mengutamakan kuaitas & harga terbaik kami melayani pengiriman ke seluruh Nusantara.
             Rasanya tidak sabar kami untuk dapat berkerjasama dengan perusahaan Anda.
-            <br>
+            <br><br>
             <b>Untuk info produk, spesifikasi dan harga terbaik, segera hubungi marketing kami.</b>
             
 
           </p>
-          <a href="#" class="btn-learn-more">Learn More</a>
+          <a href="{{route('aboutus')}}" class="btn-learn-more">Learn More</a>
         </div>
       </div>
 
@@ -227,7 +228,7 @@
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>{{$item->nama}}</h3>
                 <h4>{{$item->perusahaan}}</h4>
-                <p>
+                <p align="justify">
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   {{$item->isi}}
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
@@ -262,7 +263,7 @@
 
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Contact Us</p>
+        <p>Artikel</p>
       </div>
 
       <div class="row">
