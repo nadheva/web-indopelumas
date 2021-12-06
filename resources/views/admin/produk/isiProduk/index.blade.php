@@ -37,7 +37,7 @@
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                     <a class="dropdown-item" href="/edit-isi-produk/{{$row->produk_slug}}">Edit</a>
-                                                    <a class="dropdown-item" onclick="return confirm('Anda yakin menghapus ')" href="/edit-isi-delete/{{$row->produk_slug}}">Delete</a>
+                                                    <a class="dropdown-item" onclick="return confirm('Anda yakin menghapus ')" href="/delete-isi-produk/{{$row->produk_slug}}">Delete</a>
                                                 </div>
                                             </div>
                                         </td>

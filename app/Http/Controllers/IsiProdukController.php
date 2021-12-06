@@ -60,15 +60,16 @@ class IsiProdukController extends Controller
         $IsiProduk = IsiProduk::findOrFail($id);
         $IsiProduk->judul = $request->judul;   
         $IsiProduk->isi = $request->isi;  
+        $IsiProduk->produk_slug = $request->produk_slug;
         $IsiProduk->save();
 
-        return redirect()->route('showdata',$request->produk_slug)
+        return redirect()->route('indexisiproduk',$request->produk_slug)
             ->with('edit', 'Isi Produk Berhasil Diedit');
     }
     public function delete($id)
     {
         $IsiProduk = IsiProduk::where('id', $id)->delete();
-        return redirect()->route('IsiProduk.index')
+        return redirect()->back()
         ->with('delete', 'Isi Produk berhasil dihapus');
     }
 
