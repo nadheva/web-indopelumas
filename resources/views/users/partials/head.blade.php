@@ -26,6 +26,7 @@
     <!-- Template Main CSS File -->
     <link href="{{asset('tlandingpage/assets/css/style.css')}}" rel="stylesheet">
   
+    @stack('css')
     <!-- =======================================================
     * Template Name: Multi - v4.7.0
     * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/

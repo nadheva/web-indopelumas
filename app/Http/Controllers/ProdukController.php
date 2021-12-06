@@ -31,12 +31,12 @@ class ProdukController extends Controller
             $file_name = "foto_$date.$extension";
             $path = $request->file('foto')->storeAs('public/produk', $file_name);
         } else {
-            $txt = null;
+            $file_name = null;
         }
 
         Produk::create([
             'produk' => $request->produk,
-            'foto' => $txt,
+            'foto' => $file_name,
             'deskripsi' => $request->deskripsi
         ]);
 
@@ -79,6 +79,12 @@ class ProdukController extends Controller
         $produk = Produk::where('id', $id)->delete();
         return redirect()->route('produk.index')
         ->with('delete', 'Produk berhasil dihapus');
+    }
+
+    public function productDetails($id)
+    {
+        $produk = Produk::find($id);
+        return view('users.test', compact('produk'));
     }
 
 }

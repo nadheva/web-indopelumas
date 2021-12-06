@@ -36,14 +36,15 @@ Route::get('/contact-us', function () {
     return view('users.contact-us');
 })->name('contactus');
 
-Route::get('/nebula', function () {
-    return view('users.single-page');
+Route::get('/test', function () {
+    return view('users.test');
 });
 
 Route::get('/admin', function () {
     return view('admin.index');
 });
 Route::resource('produk', ProdukController::class);
+Route::get('product-details/{id}', [ProdukController::class, 'productDetails']);
 Route::get('produk/delete/{id}', [ProdukController::class, 'delete']);
 Route::resource('news', NewsController::class);
 Route::get('news/delete/{id}', [NewsController::class, 'delete']);
