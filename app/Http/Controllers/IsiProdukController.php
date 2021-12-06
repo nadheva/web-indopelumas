@@ -10,15 +10,17 @@ class IsiProdukController extends Controller
 {
     public function productDetails($id)
     {
+        $produk = Produk::where('slug', $id)->first();
         $IsiProduk = IsiProduk::where('produk_slug',$id)->get();
-        $satu = IsiProduk::where('produk_slug',$id)->first();
+        // $satu = IsiProduk::where('produk_slug',$id)->get();
         // dd($satu);
-        return view('admin.produk.isiproduk.index', compact('IsiProduk','satu'));
+        return view('admin.produk.isiproduk.index', compact('IsiProduk','produk'));
     }
 
-    public function create($id)
+    public function create($slug)
     {
-        $satu = IsiProduk::where('produk_slug',$id)->first();
+        // $satu = Produk::where('slug',$id)->first();
+        $satu = Produk::find($slug);
         return view('admin.produk.isiProduk.create', compact('satu'));
     }
 

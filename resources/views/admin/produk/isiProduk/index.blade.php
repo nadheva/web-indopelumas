@@ -5,7 +5,7 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Data Produk</h1>
                     <div class="card-body">
-				    <a href="{{route('tambahisiproduk',$satu->produk_slug)}}" class="btn btn-success">Tambah Data</a>
+				    <a href="{{route('tambahisiproduk',$produk->id)}}" class="btn btn-success">Tambah Data</a>
 				    <br/></br>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">

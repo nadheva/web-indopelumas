@@ -8,7 +8,7 @@
                 <div class="form-group">
                     <label for="judul">Judul Produk</label>
                     <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul"  name="judul" value="{{old('judul')}}">
-                    <input type="hidden" name="produk_slug" value="{{$satu->produk_slug}}">
+                    <input type="hidden" name="produk_slug" value="{{$satu->slug}}">
                     @error('judul')
                     <div class="invalid-feedback">{{$message}}</div>
                     @enderror
