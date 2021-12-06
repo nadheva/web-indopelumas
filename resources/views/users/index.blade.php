@@ -71,7 +71,7 @@
         <p>Tentang Indopelumas</p>
       </div>
 
-      <div class="row content">
+      {{-- <div class="row content">
         <div class="col-lg-6">
           <p>
             Visi
@@ -79,6 +79,8 @@
           <ul>
             <li><i class="ri-check-double-line"></i> Memberikan pelayanan kepada customer sebagai dasar untuk mencapai keberhasilan dan kesuksesan</li>
           </ul>
+        </div>
+        <div class="col-lg-6">
           <p>
             Misi
           </p>
@@ -86,23 +88,60 @@
             <li><i class="ri-check-double-line"></i> Selalu ingin berkembang dan bergerak maju bersama pelanggan</li>
           </ul>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0">
-          <p>
+      </div>
+      <div class="row content">
+        <div class="col-lg-12 pt-4 pt-lg-0">
+          <p style="text-align: justify">
             PT. MITRA ETHANINDO adalah pemegang merk/Principal dari NEBULA LUBRICANTS yang merupakan produk pelumas yang bisa diandalkan. Selain itu perusahaan kami juga berkerjasama dengan beberapa Distributor pelumas di tanah air seperti merk Pertamina, Shell, Exxon Mobil, Eni (Agip) dll untuk mencukupi kebutuhan customer yang datang dari berbagai sektor industri.
+            <br> <br>
+            Sekarang ini lini produk kami terbagi menjadi dua bagian penting yaitu Oli dan Grease/Minyak Gemuk/Stempet.
+            <br> <br>
+            Dari pengalaman marketing selama belasan tahun dalam dunia pelumasan, kami telah berhasil melayani jutaan liter permintaan pelumas dari berbagai bidang industri di Indonesia.
+            <br> <br>
+            Semenjak perusahaan ini berdiri dari tahun 2012 tentunya telah banyak sekali pengalaman kami dalam melayani Customer. Berbekal profesionalisme dan mengupayakan yang terbaik untuk Customer, kami yakin dapat membangun kebersamaan bisnis jangka panjang dengan perusahaan Anda.
+            <br> <br>
+            Sekarang ini kami telah banyak sekali berkerjasama dengan perusahaan yang bergerak di bidang Transportasi, Proyek industry/Infrastruktur, Mining Coal/Nickel, Power Plant, Perkebunan, Marine, Oil & Gas Service dll.
+            <br> <br>
+            Dengan mengutamakan kuaitas & harga terbaik kami melayani pengiriman ke seluruh Nusantara.
+            <br> <br>
+            Rasanya tidak sabar kami untuk dapat berkerjasama dengan perusahaan Anda.
+            <br> <br>
+            Untuk info produk, spesifikasi dan harga terbaik, segera hubungi marketing kami.
+          </p>
+          <a href="#" class="btn-learn-more">Learn More</a>
+        </div>
+      </div> --}}
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <ul>
+            <li><i class="ri-check-double-line"></i> VISI</li>
+            <p>
+              Memberikan pelayanan kepada customer sebagai dasar untuk mencapai keberhasilan dan kesuksesan
+            </p>
+            <li><i class="ri-check-double-line"></i> MISI</li>
+            <p>
+              Selalu ingin berkembang dan bergerak maju bersama pelanggan
+            </p>
+            <br>
+            <b>PT. MITRA ETHANINDO</b>  adalah pemegang merk/Principal dari NEBULA LUBRICANTS yang merupakan produk pelumas yang bisa diandalkan. Selain itu perusahaan kami juga berkerjasama dengan beberapa Distributor pelumas di tanah air seperti merk Pertamina, Shell, Exxon Mobil, Eni (Agip) dll untuk mencukupi kebutuhan customer yang datang dari berbagai sektor industri.
             <br>
             Sekarang ini lini produk kami terbagi menjadi dua bagian penting yaitu Oli dan Grease/Minyak Gemuk/Stempet.
-            <br>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p>
             Dari pengalaman marketing selama belasan tahun dalam dunia pelumasan, kami telah berhasil melayani jutaan liter permintaan pelumas dari berbagai bidang industri di Indonesia.
-            <br>
             Semenjak perusahaan ini berdiri dari tahun 2012 tentunya telah banyak sekali pengalaman kami dalam melayani Customer. Berbekal profesionalisme dan mengupayakan yang terbaik untuk Customer, kami yakin dapat membangun kebersamaan bisnis jangka panjang dengan perusahaan Anda.
             <br>
             Sekarang ini kami telah banyak sekali berkerjasama dengan perusahaan yang bergerak di bidang Transportasi, Proyek industry/Infrastruktur, Mining Coal/Nickel, Power Plant, Perkebunan, Marine, Oil & Gas Service dll.
-            <br>
             Dengan mengutamakan kuaitas & harga terbaik kami melayani pengiriman ke seluruh Nusantara.
-            <br>
             Rasanya tidak sabar kami untuk dapat berkerjasama dengan perusahaan Anda.
             <br>
-            Untuk info produk, spesifikasi dan harga terbaik, segera hubungi marketing kami.
+            <b>Untuk info produk, spesifikasi dan harga terbaik, segera hubungi marketing kami.</b>
+            
+
           </p>
           <a href="#" class="btn-learn-more">Learn More</a>
         </div>
@@ -210,9 +249,8 @@
     <div class="container" data-aos="zoom-in">
 
       <div class="text-center">
-        <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <h3>Contact us for further information</h3>
+        <a class="cta-btn" href="#">Contact Us</a>
       </div>
 
     </div>

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\News;
+use App\Models\IsiProduk;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -12,5 +14,14 @@ class LandingPageController extends Controller
         // $berita = News::findOrFail($id);
 // dd($semuaberita);
         return view("users.news", compact("semuaberita"));
+    }
+
+    
+    public function details($id)
+    {
+        $produk = Produk::find($id);
+        $isi = IsiProduk::all();
+        //TINGGAL DIKASIH WHERE
+        return view('users.product-details', compact('produk', 'isi'));
     }
 }

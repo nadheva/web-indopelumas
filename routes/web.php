@@ -38,10 +38,10 @@ Route::get('/contact-us', function () {
     return view('users.contact-us');
 })->name('contactus');
 
-Route::get('/test', function () {
-    return view('users.test');
-});
+Route::get('product/{id}', [LandingPageController::class, 'details'])->name('details');
 
+
+//Admin
 Route::get('/admin', function () {
     return view('admin.index');
 });
