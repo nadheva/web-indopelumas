@@ -59,7 +59,7 @@ Route::get('product-details/{id}', [IsiProdukController::class, 'productDetails'
 
 Route::resource('news', NewsController::class);
 Route::get('news/delete/{id}', [NewsController::class, 'delete']);
-Route::get('news/show/{id}', [NewsController::class, 'show']);
+// Route::get('news/show/{id}', [NewsController::class, 'show']);
 Route::resource('komentar', KomentarController::class);
 
 
