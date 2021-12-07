@@ -31,6 +31,7 @@ Route::get('/contact-us', function () {
     return view('users.contact-us');
 })->name('contactus');
 Route::get('product/{id}', [LandingPageController::class, 'details'])->name('details');
+Route::get('news-article/{id}', [LandingPageController::class, 'newsDetail'])->name('newsDetail');
 
 
 //Admin

@@ -30,4 +30,11 @@ class LandingPageController extends Controller
         //TINGGAL DIKASIH WHERE
         return view('users.product-details', compact('produk', 'isi'));
     }
+
+    public function newsDetail($id)
+    {
+        $news = News::where('id',$id)->first();
+        //TINGGAL DIKASIH WHERE
+        return view('users.news-detail', compact('news'));
+    }
 }
