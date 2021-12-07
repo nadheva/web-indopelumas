@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ProdukSeeder::class,
             TestimonialsSeeder::class,
+            IsiProdukSeeder::class,
         ]);
     }
 }
