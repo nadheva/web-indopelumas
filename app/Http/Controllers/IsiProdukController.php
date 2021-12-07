@@ -41,11 +41,10 @@ class IsiProdukController extends Controller
         ->with('success', 'IsiProduk Berhasil Ditambahkan');
     }
 
-    public function edit($produk_slug)
+    public function edit($id)
     {
-        // $isiproduk = IsiProduk::find($id);
-        // $satu = Produk::where('slug', $id)->get();
-        $isiproduk = IsiProduk::where('produk_slug', $produk_slug)->first();
+      
+        $isiproduk = IsiProduk::find($id);
         return view('admin.produk.isiProduk.edit', compact('isiproduk'));
     }
 
@@ -60,6 +59,7 @@ class IsiProdukController extends Controller
         $IsiProduk = IsiProduk::findOrFail($id);
         $IsiProduk->judul = $request->judul;   
         $IsiProduk->isi = $request->isi;  
+        $IsiProduk->produk_slug = $request->produk_slug;  
         $IsiProduk->save();
 
         return redirect()->route('showdata',$request->produk_slug)
@@ -68,7 +68,7 @@ class IsiProdukController extends Controller
     public function delete($id)
     {
         $IsiProduk = IsiProduk::where('id', $id)->delete();
-        return redirect()->route('IsiProduk.index')
+        return back()
         ->with('delete', 'Isi Produk berhasil dihapus');
     }
 

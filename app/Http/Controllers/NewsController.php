@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
 class NewsController extends Controller
 {
     public function index()
@@ -57,13 +57,21 @@ class NewsController extends Controller
     public function update(Request $request,$id)
     {
         $news = News::findOrFail($id);
-        $news->tgl_post = $request->tgl_post;
-        // $news->bln_post = $request->bln_post;
         $news->kategori = $request->kategori;
         $news->judul = $request->judul;
-        $news->short_news = $request->short_news;
-        $news->news = $request->news;
+        $news->isi = $request->isi;
+        $news->penulis = $request->penulis;
+        if ($request->has("foto")) {
 
+            Storage::delete("public/Testimonials/$news->foto");
+
+            $date = date("his");
+            $extension = $request->file('foto')->extension();
+            $file_name = "foto_$date.$extension";
+            $path = $request->file('foto')->storeAs('public/testimonials', $file_name);
+            
+            $news->foto = $file_name;
+        }
 
         $news->save();
 

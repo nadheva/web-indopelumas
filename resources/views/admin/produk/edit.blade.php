@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group">
                         <label for="deskripsi">Deskripsi</label>
-                        <textarea class="form-control @error('deskripsi') is-invalid @enderror" rows="4" id="deskripsi" name="deskripsi" value="{{$produk->deskripsi}}"></textarea>
+                        <textarea class="form-control @error('deskripsi') is-invalid @enderror" rows="4" id="deskripsi" name="deskripsi" value="">{{$produk->deskripsi}}</textarea>
                         @error('deskripsi')
                         <div class="invalid-feedback">{{$message}}</div>
                         @enderror

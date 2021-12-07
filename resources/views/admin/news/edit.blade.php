@@ -5,6 +5,7 @@
                 <h2 class="text-center pt-4">Edit Berita</h2>
                 <form class="form-horizontal" method="post" action="{{route('news.update', $news->id)}}" enctype="multipart/form-data">
                     @csrf
+                    @method("PUT")
                     <div class="form-group">
                         <label for="judul">Judul</label>
                         <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul"  name="judul" value="{{$news->judul}}">
@@ -21,14 +22,14 @@
                     </div>
                     <div class="form-group">
                         <label for="foto">Foto</label>
-                        <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" name="foto" value="{{$news->foto}}"></input>
+                        <input type="file" class="form-control @error('foto') is-invalid @enderror" id="foto" name="foto" value="{{$news->foto}}">
                         @error('foto')
                         <div class="invalid-feedback">{{$message}}</div>
                         @enderror
                     </div>
                     <div class="form-group">
                         <label for="isi">Isi</label>
-                        <textarea class="form-control @error('isi') is-invalid @enderror" rows="4" id="isi" name="isi" value="{{$news->isi}}"></textarea>
+                        <textarea class="form-control @error('isi') is-invalid @enderror" rows="4" id="isi" name="isi" value="">{{$news->isi}}</textarea>
                         @error('isi')
                         <div class="invalid-feedback">{{$message}}</div>
                         @enderror

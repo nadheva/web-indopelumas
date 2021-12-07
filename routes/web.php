@@ -5,6 +5,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\IsiProdukController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\KomentarController;
+use App\Http\Controllers\TestimonialsController;
 use App\Http\Controllers\LandingPageController;
 /*
 |--------------------------------------------------------------------------
@@ -60,7 +61,8 @@ Route::resource('news', NewsController::class);
 Route::get('news/delete/{id}', [NewsController::class, 'delete']);
 Route::get('news/show/{id}', [NewsController::class, 'show']);
 Route::resource('komentar', KomentarController::class);
-
+Route::resource('testimonials', TestimonialsController::class);
+Route::get('testimonials/delete/{id}', [testimonialsController::class, 'delete']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
