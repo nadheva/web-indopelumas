@@ -23,6 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->share('Testimonial', testimonials::all());
+        view()->share('testimonial', testimonials::all());
     }
 }
