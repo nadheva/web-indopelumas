@@ -6,29 +6,29 @@
         
 
           <div class="col-lg-4 col-md-6 footer-links">
-            {{-- LOGO --}}
+            <img src="{{asset('tlandingpage/assets/img/indopelumaspth.png')}}" width="300" >
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Altenative Link</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Testimonials</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">News & Articles</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('landingpage')}}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('aboutus')}}">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{URL('about-us#testimonials')}}">Testimonials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('artikel')}}">News & Articles</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('contactus')}}">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Products</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Nebula Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Pertamina Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Shell Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Mobil Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Eni Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Total Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Nebula-Oil')}}">Nebula Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Pertaminal-Oil')}}">Pertamina Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Shell-Oil')}}">Shell Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Mobil-Oil')}}">Mobil Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Eni-Oil')}}">Eni Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Total-Oil')}}">Total Oil</a></li>
             </ul>
           </div>
 

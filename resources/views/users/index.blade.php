@@ -1,62 +1,69 @@
 @section('carousel')
 <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-      <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url({{('tlandingpage/assets/img/slide/slide1.jpg')}})">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Multi</span></h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-            </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url({{('tlandingpage/assets/img/slide/slide1.jpg')}})">
+        <div class="carousel-container">
+          <div class="container">
+            <h2 class="animate__animated animate__fadeInDown">Indo<span>pelumas</span></h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Our Products</a>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/slide2.jpg')}})">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/slide3.jpg')}})">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/slide2.jpg')}})">
+        <div class="carousel-container">
+        </div>
+      </div>
 
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/slide3.jpg')}})">
+        <div class="carousel-container">
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b1.jpg')}})">
+        <div class="carousel-container">
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b2.jpg')}})">
+        <div class="carousel-container">
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="carousel-item" style="background-image: url({{('tlandingpage/assets/img/slide/b3.jpg')}})">
+        <div class="carousel-container">
+        </div>
+      </div>
 
     </div>
-  </section><!-- End Hero -->
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+  </div>
+</section><!-- End Hero -->
 @endsection
 
 
 <x-guest-layout>
- <!-- ======= About Section ======= -->
- <section id="about" class="about">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
@@ -64,7 +71,7 @@
         <p>Tentang Indopelumas</p>
       </div>
 
-      <div class="row content">
+      {{-- <div class="row content">
         <div class="col-lg-6">
           <p>
             Visi
@@ -72,6 +79,8 @@
           <ul>
             <li><i class="ri-check-double-line"></i> Memberikan pelayanan kepada customer sebagai dasar untuk mencapai keberhasilan dan kesuksesan</li>
           </ul>
+        </div>
+        <div class="col-lg-6">
           <p>
             Misi
           </p>
@@ -79,32 +88,70 @@
             <li><i class="ri-check-double-line"></i> Selalu ingin berkembang dan bergerak maju bersama pelanggan</li>
           </ul>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0">
-          <p>
+      </div>
+      <div class="row content">
+        <div class="col-lg-12 pt-4 pt-lg-0">
+          <p style="text-align: justify">
             PT. MITRA ETHANINDO adalah pemegang merk/Principal dari NEBULA LUBRICANTS yang merupakan produk pelumas yang bisa diandalkan. Selain itu perusahaan kami juga berkerjasama dengan beberapa Distributor pelumas di tanah air seperti merk Pertamina, Shell, Exxon Mobil, Eni (Agip) dll untuk mencukupi kebutuhan customer yang datang dari berbagai sektor industri.
-            <br>
+            <br> <br>
             Sekarang ini lini produk kami terbagi menjadi dua bagian penting yaitu Oli dan Grease/Minyak Gemuk/Stempet.
-            <br>
+            <br> <br>
             Dari pengalaman marketing selama belasan tahun dalam dunia pelumasan, kami telah berhasil melayani jutaan liter permintaan pelumas dari berbagai bidang industri di Indonesia.
-            <br>
+            <br> <br>
             Semenjak perusahaan ini berdiri dari tahun 2012 tentunya telah banyak sekali pengalaman kami dalam melayani Customer. Berbekal profesionalisme dan mengupayakan yang terbaik untuk Customer, kami yakin dapat membangun kebersamaan bisnis jangka panjang dengan perusahaan Anda.
-            <br>
+            <br> <br>
             Sekarang ini kami telah banyak sekali berkerjasama dengan perusahaan yang bergerak di bidang Transportasi, Proyek industry/Infrastruktur, Mining Coal/Nickel, Power Plant, Perkebunan, Marine, Oil & Gas Service dll.
-            <br>
+            <br> <br>
             Dengan mengutamakan kuaitas & harga terbaik kami melayani pengiriman ke seluruh Nusantara.
-            <br>
+            <br> <br>
             Rasanya tidak sabar kami untuk dapat berkerjasama dengan perusahaan Anda.
-            <br>
+            <br> <br>
             Untuk info produk, spesifikasi dan harga terbaik, segera hubungi marketing kami.
           </p>
           <a href="#" class="btn-learn-more">Learn More</a>
+        </div>
+      </div> --}}
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <ul>
+            <li><i class="ri-check-double-line"></i> VISI</li>
+            <p>
+              Memberikan pelayanan kepada customer sebagai dasar untuk mencapai keberhasilan dan kesuksesan
+            </p>
+            <li><i class="ri-check-double-line"></i> MISI</li>
+            <p>
+              Selalu ingin berkembang dan bergerak maju bersama pelanggan
+            </p>
+            <br>
+            <p align="justify">
+            <b>PT. MITRA ETHANINDO</b>  adalah pemegang merk/Principal dari NEBULA LUBRICANTS yang merupakan produk pelumas yang bisa diandalkan. Selain itu perusahaan kami juga berkerjasama dengan beberapa Distributor pelumas di tanah air seperti merk Pertamina, Shell, Exxon Mobil, Eni (Agip) dll untuk mencukupi kebutuhan customer yang datang dari berbagai sektor industri.
+            <br><br>
+            Sekarang ini lini produk kami terbagi menjadi dua bagian penting yaitu Oli dan Grease/Minyak Gemuk/Stempet.
+            </p>
+          </ul>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p align="justify">
+            Dari pengalaman marketing selama belasan tahun dalam dunia pelumasan, kami telah berhasil melayani jutaan liter permintaan pelumas dari berbagai bidang industri di Indonesia.
+            Semenjak perusahaan ini berdiri dari tahun 2012 tentunya telah banyak sekali pengalaman kami dalam melayani Customer. Berbekal profesionalisme dan mengupayakan yang terbaik untuk Customer, kami yakin dapat membangun kebersamaan bisnis jangka panjang dengan perusahaan Anda.
+            <br><br>
+            Sekarang ini kami telah banyak sekali berkerjasama dengan perusahaan yang bergerak di bidang Transportasi, Proyek industry/Infrastruktur, Mining Coal/Nickel, Power Plant, Perkebunan, Marine, Oil & Gas Service dll.
+            Dengan mengutamakan kuaitas & harga terbaik kami melayani pengiriman ke seluruh Nusantara.
+            Rasanya tidak sabar kami untuk dapat berkerjasama dengan perusahaan Anda.
+            <br><br>
+            <b>Untuk info produk, spesifikasi dan harga terbaik, segera hubungi marketing kami.</b>
+            
+
+          </p>
+          <a href="{{route('aboutus')}}" class="btn-learn-more">Learn More</a>
         </div>
       </div>
 
     </div>
   </section><!-- End About Section -->
 
-  
+
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
@@ -127,35 +174,17 @@
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Nama Product</h4>
-            <p>Product</p>
-            <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        @foreach ($produk as $item)
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="{{asset('storage/produk/'.$item->foto)}}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>{{$item->produk}}</h4>
+              <p>{{$item->deskripsi}}</p>
+              <a href="{{asset('storage/produk/'.$item->foto)}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{$item->produk}}"><i class="bx bx-plus"></i></a>
+              <a href="{{url('product',$item->slug)}}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Nama Product</h4>
-            <p>Product</p>
-            <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Nama Product</h4>
-            <p>Product</p>
-            <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-        
+        @endforeach       
 
       </div>
 
@@ -178,10 +207,10 @@
           <div class="swiper-slide">
             <div class="testimonial-wrap">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="{{asset('storage/testimonials/'.$item->foto)}}" class="testimonial-img" alt="">
                 <h3>{{$item->nama}}</h3>
                 <h4>{{$item->perusahaan}}</h4>
-                <p>
+                <p align="justify">
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   {{$item->isi}}
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
@@ -189,7 +218,7 @@
               </div>
             </div>
           </div><!-- End testimonial item -->
-          @endforeach   
+          @endforeach
 
         </div>
         <div class="swiper-pagination"></div>
@@ -203,9 +232,8 @@
     <div class="container" data-aos="zoom-in">
 
       <div class="text-center">
-        <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <h3>Contact us for further information</h3>
+        <a class="cta-btn" href="#">Contact Us</a>
       </div>
 
     </div>
@@ -217,7 +245,7 @@
 
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Contact Us</p>
+        <p>Artikel</p>
       </div>
 
       <div class="row">

@@ -25,7 +25,7 @@
 
         <div class="col-lg-3">
           <div class="portfolio-info">
-            <h3>Project information</h3>
+            <h3>Populer</h3>
             <ul>
               <li><strong>Category</strong>: Web design</li>
               <li><strong>Client</strong>: ASU Company</li>

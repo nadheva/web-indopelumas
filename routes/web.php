@@ -17,14 +17,12 @@ use App\Http\Controllers\LandingPageController;
 |
 */
 
-Route::get('/', function () {
-    return view('users.index');
-})->name('landingpage');
 
-Route::get('/artikel', function () {
-    return view('users.news');
-});
+Route::get('', [LandingPageController::class, 'home'])->name('landingpage');
 Route::get('artikel', [LandingPageController::class, 'artikel'])->name('artikel');
+
+
+
 
 Route::get('/about-us', function () {
     return view('users.about-us');
@@ -38,10 +36,10 @@ Route::get('/contact-us', function () {
     return view('users.contact-us');
 })->name('contactus');
 
-Route::get('/test', function () {
-    return view('users.test');
-});
+Route::get('product/{id}', [LandingPageController::class, 'details'])->name('details');
 
+
+//Admin
 Route::get('/admin', function () {
     return view('admin.index');
 });
