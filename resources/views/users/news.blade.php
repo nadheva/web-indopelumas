@@ -25,12 +25,11 @@
 
         <div class="col-lg-3">
           <div class="portfolio-info">
-            <h3>Populer</h3>
+            <h3>Top News & Article</h3>
             <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#">Berita</a></li>
             </ul>
           </div>
         </div>
