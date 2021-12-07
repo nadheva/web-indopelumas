@@ -240,12 +240,15 @@
   </section><!-- End Cta Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact section-bg">
+  <section id="contact" class="contact section-bg pt-5 mt-5">
     <div class="container" data-aos="fade-up">
 
+        <div class="d-none d-sm-block mb-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.977744220091!2d106.72545921476879!3d-6.133692495558896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDgnMDEuMyJTIDEwNsKwNDMnMzkuNSJF!5e0!3m2!1sen!2sid!4v1612845006225!5m2!1sen!2sid" width="1300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       <div class="section-title">
         <h2>Contact</h2>
-        <p>CONTACT US</p>
+        <p>Contact Us</p>
       </div>
 
       <div class="row">
@@ -257,21 +260,22 @@
               <div class="info-box">
                 <i class="bx bx-map"></i>
                 <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Ruko Fantasi Taman Palem (Ruko Seribu) Blok Z2 No 30</p>
+                <p>Kel. Cengkareng Barat, Kec. Cengkareng</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box mt-4">
                 <i class="bx bx-envelope"></i>
                 <h3>Email Us</h3>
-                <p>info@example.com<br>contact@example.com</p>
+                <p>indopelumas@gmail.com<br>sales@indopelumas.com</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box mt-4">
                 <i class="bx bx-phone-call"></i>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                <p>+62 812 8888 9662 <br> - </p>
               </div>
             </div>
           </div>
@@ -279,7 +283,7 @@
         </div>
 
         <div class="col-lg-6">
-          <form action="{{ route('contact.store') }}" method="post" role="form" class="php-email-form">
+          <form method="post" role="form" action="{{route('contact.store')}}" class="php-email-form">
             @csrf
             <div class="row">
               <div class="col-md-6 form-group">

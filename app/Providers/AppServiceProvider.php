@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Providers;
-use App\Models\testimonials;
+use App\Models\Testimonials;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // view()->share('testimonial', testimonials::all());
+        view()->share('Testimonial', testimonials::all());
     }
 }
