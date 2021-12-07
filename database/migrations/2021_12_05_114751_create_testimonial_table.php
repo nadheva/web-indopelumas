@@ -17,7 +17,7 @@ class CreateTestimonialTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('perusahaan');
-            $table->string('isi');
+            $table->text('isi');
             $table->string('foto');
             $table->timestamps();
         });
