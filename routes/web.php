@@ -6,6 +6,7 @@ use App\Http\Controllers\IsiProdukController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,8 @@ use App\Http\Controllers\LandingPageController;
 
 Route::get('', [LandingPageController::class, 'home'])->name('landingpage');
 Route::get('artikel', [LandingPageController::class, 'artikel'])->name('artikel');
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 
 
