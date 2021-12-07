@@ -27,9 +27,9 @@
           <div class="portfolio-info">
             <h3>Top News & Article</h3>
             <ul>
-              <li><a href="#">Berita</a></li>
-              <li><a href="#">Berita</a></li>
-              <li><a href="#">Berita</a></li>
+              @foreach ($semuaberita as $item)
+              <li><a href="#">{{ $item->judul }}</a></li>
+              @endforeach
             </ul>
           </div>
         </div>
