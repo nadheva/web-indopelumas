@@ -23,12 +23,12 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Products</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Nebula Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Pertamina Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Shell Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Mobil Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Eni Oil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Total Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Nebula-Oil')}}">Nebula Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Pertaminal-Oil')}}">Pertamina Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Shell-Oil')}}">Shell Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Mobil-Oil')}}">Mobil Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Eni-Oil')}}">Eni Oil</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="{{url('product/Total-Oil')}}">Total Oil</a></li>
             </ul>
           </div>
 

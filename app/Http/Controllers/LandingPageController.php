@@ -19,8 +19,8 @@ class LandingPageController extends Controller
     
     public function details($id)
     {
-        $produk = Produk::find($id);
-        $isi = IsiProduk::all();
+        $produk = Produk::where('slug',$id)->first();
+        $isi = IsiProduk::where('produk_slug',$id)->get();
         //TINGGAL DIKASIH WHERE
         return view('users.product-details', compact('produk', 'isi'));
     }

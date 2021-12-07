@@ -50,10 +50,10 @@ class ProdukSeeder extends Seeder
         ]);    
         Produk::create([
             'id' => '6',
-            'produk' => 'Mobil Oil',
-            'foto' => 'Mobil Oil',
-            'deskripsi' => 'Mobil Oil',
-            'slug' => 'Mobil-Oil',
+            'produk' => 'Total Oil',
+            'foto' => 'Total Oil',
+            'deskripsi' => 'Total Oil',
+            'slug' => 'Total-Oil',
         ]);
     }
 }
