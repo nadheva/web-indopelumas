@@ -32,6 +32,10 @@ Route::get('/products', function () {
     return view('users.products');
 });
 
+Route::get('/news-detail', function () {
+    return view('users.news-detail');
+});
+
 Route::get('/contact-us', function () {
     return view('users.contact-us');
 })->name('contactus');
