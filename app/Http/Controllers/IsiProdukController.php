@@ -62,7 +62,7 @@ class IsiProdukController extends Controller
         $IsiProduk->produk_slug = $request->produk_slug;  
         $IsiProduk->save();
 
-        return redirect()->route('showdata',$request->produk_slug)
+        return redirect()->route('indexisiproduk',$request->produk_slug)
             ->with('edit', 'Isi Produk Berhasil Diedit');
     }
     public function delete($id)
