@@ -41,7 +41,7 @@ class NewsController extends Controller
             'kategori' => $request->kategori,
             'judul'  => $request->judul,
             'isi'   => $request->isi,
-            'foto' => $path,
+            'foto' => $file_name,
         ]);
 
         return redirect()->route('news.index')

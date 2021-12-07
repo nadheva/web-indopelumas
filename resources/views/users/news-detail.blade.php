@@ -8,7 +8,7 @@
               <div class="portfolio-details-slider swiper">
   
                   <div class="swiper-slide">
-                    <img src="{{ asset('storage/berita/'.$news->foto) }})" alt="">
+                    <img src="{{ asset('storage/news/'.$news->foto) }}" alt="">
                   </div>
                 <div class="swiper-pagination"></div>
               </div>

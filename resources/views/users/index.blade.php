@@ -233,7 +233,7 @@
 
       <div class="text-center">
         <h3>Contact us for further information</h3>
-        <a class="cta-btn" href="#">Contact Us</a>
+        <a class="cta-btn" target="_blank" href="https://api.whatsapp.com/send?phone=6281288889662">Contact Us</a>
       </div>
 
     </div>
@@ -245,7 +245,7 @@
 
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Artikel</p>
+        <p>CONTACT US</p>
       </div>
 
       <div class="row">
