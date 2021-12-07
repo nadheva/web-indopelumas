@@ -174,35 +174,17 @@
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Nama Product</h4>
-            <p>Product</p>
-            <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        @foreach ($produk as $item)
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="{{asset('storage/produk/'.$item->foto)}}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>{{$item->produk}}</h4>
+              <p>{{$item->deskripsi}}</p>
+              <a href="{{asset('storage/produk/'.$item->foto)}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{$item->produk}}"><i class="bx bx-plus"></i></a>
+              <a href="{{url('product',$item->slug)}}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Nama Product</h4>
-            <p>Product</p>
-            <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Nama Product</h4>
-            <p>Product</p>
-            <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-
-
+        @endforeach       
 
       </div>
 

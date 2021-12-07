@@ -43,8 +43,8 @@
               <ul>
                 @foreach ($isi as $item)
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>{{ $loop->iteration }}</span> {{ $item->judul }} <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-{{$item->id}}" class="collapsed"><span>{{ $loop->iteration }}</span> {{ $item->judul }} <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-{{$item->id}}" class="collapse" data-bs-parent=".accordion-list">
                     {!! $item->isi !!}
                   </div>
                 </li>

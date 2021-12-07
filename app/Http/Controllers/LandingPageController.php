@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
+    public function home()
+    {
+        $produk = Produk::all();
+        return view("users.index", compact("produk"));
+    }
+
     public function artikel()
     {
         $semuaberita = News::orderBy("created_at", "DESC")->get();
