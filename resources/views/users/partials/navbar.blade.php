@@ -2,7 +2,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo">
-        <a href="index.html">
+        <a href="{{URL('/#hero')}}">
           <img src="{{asset('tlandingpage/assets/img/indopelumas.png')}}"  >
         </a>
       </h1>
