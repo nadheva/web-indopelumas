@@ -6,12 +6,10 @@
   
             <div class="col-lg-6">
               <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
   
                   <div class="swiper-slide">
-                    <img src="{{asset('tlandingpage/assets/img/portfolio/portfolio-1.jpg')}}" alt="">
+                    <img src="{{ asset('storage/berita/'.$news->foto) }})" alt="">
                   </div>
-                </div>
                 <div class="swiper-pagination"></div>
               </div>
             </div>
@@ -27,9 +25,9 @@
                 </ul>
               </div> --}}
               <div class="portfolio-description">
-                <h2>This is an example of portfolio detail</h2>
+                <h2>{{ $news->judul }}</h2>
                 <p align="justify">
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                  {{ $news->isi }}
                 </p>
               </div>
             </div>

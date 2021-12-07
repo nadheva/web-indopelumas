@@ -32,15 +32,12 @@ Route::get('/products', function () {
     return view('users.products');
 });
 
-Route::get('/news-detail', function () {
-    return view('users.news-detail');
-});
-
 Route::get('/contact-us', function () {
     return view('users.contact-us');
 })->name('contactus');
 
 Route::get('product/{id}', [LandingPageController::class, 'details'])->name('details');
+Route::get('news-article/{id}', [LandingPageController::class, 'newsDetail'])->name('newsDetail');
 
 
 //Admin
